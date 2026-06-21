@@ -317,26 +317,46 @@ body{
 }
 
 .info-card{
-    max-width:1080px;
+    width:96%;
+    max-width:1240px;
     margin:28px auto;
     background:#E1F0FD;
     border-radius:24px;
-    padding:28px;
+    padding:34px;
     box-shadow:0 14px 38px rgba(78,141,180,.08);
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:44px;
+    flex-wrap:nowrap;
+    flex-direction:row;
+}
+
+.image-container{
+    flex:0 0 48%;
+    max-width:48%;
+    min-width:420px;
 }
 
 .image-container img{
-    width:320px;
+    width:100%;
     border-radius:24px;
     object-fit:cover;
+    transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.image-container:hover img{
+    transform:scale(1.04);
+    box-shadow:0 24px 50px rgba(0,0,0,.15);
 }
 
 .text-content{
+    flex:1 1 52%;
+    max-width:720px;
+    min-width:360px;
     font-size:1.1rem;
-    line-height:1.8;
+    line-height:1.9;
     color:#253243;
-    width:100%;
-    max-width:none;
 }
 
 .text-content ul{
@@ -358,6 +378,33 @@ body{
     border-radius:24px;
     padding:30px;
     box-shadow:0 12px 30px rgba(78,141,180,.08);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:32px;
+    flex-wrap:wrap;
+}
+
+.ref-text{
+    flex:1 1 50%;
+}
+
+.ref-image{
+    flex:1 1 40%;
+    max-width:40%;
+}
+
+.ref-image img{
+    width:100%;
+    border-radius:22px;
+    object-fit:cover;
+    aspect-ratio:4/3;
+    transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.ref-image:hover img{
+    transform:scale(1.04);
+    box-shadow:0 24px 50px rgba(0,0,0,.15);
 }
 
 .features-section{
@@ -703,8 +750,16 @@ footer{
         align-items:flex-start;
     }
 
+    .image-container{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
     .image-container img{
         width:100%;
+        max-width:100%;
+        height:auto;
     }
 
     .reference-card{
@@ -715,7 +770,20 @@ footer{
 
     .ref-image{
         width:100%;
-        min-width:auto;
+        max-width:100%;
+        min-width:0;
+    }
+
+    .ref-image img{
+        width:100%;
+        max-width:100%;
+        height:auto;
+    }
+
+    .image-container:hover img,
+    .ref-image:hover img{
+        transform:scale(1.08);
+        box-shadow:0 28px 60px rgba(0,0,0,.2);
     }
 
     .benefits{
