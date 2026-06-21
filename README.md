@@ -1,5 +1,3 @@
-# README
-
 # SaberMayor
 
 SaberMayor surge como respuesta a las dificultades que enfrentan los adultos mayores para acceder a información confiable sobre salud, tecnología y actividades de bienestar. Muchas veces, la falta de herramientas digitales adaptadas a sus necesidades limita su acceso a recursos que pueden contribuir a mejorar su calidad de vida y promover un envejecimiento activo.
